@@ -3,10 +3,16 @@
     "modules": [
         {
             "name": "Cassandra store",
-            "components": [{
-		"description": "seed node",
+            "components": [
+                {
+		        "description": "seed node",
                 "provided_resource":"VM"
-            }]
+                },
+                {
+                    "description":"regular node",
+                    "provided_resource":"VM"
+                }
+            ]
         },
         {
             "name": "Appache Webserver",

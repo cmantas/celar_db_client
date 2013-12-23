@@ -1,0 +1,13 @@
+{"configuration": {
+    "resources": [
+        {
+            "component_description":"seed node",
+            "PROVIDED_RESOURCE_id":1
+        },
+        {
+            "component_description":"regular node",
+            "PROVIDED_RESOURCE_id":2
+        }
+
+    ]
+}}

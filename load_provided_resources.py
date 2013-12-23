@@ -31,20 +31,20 @@ specs_table_id = get_table_max_id("SPECS")
 if specs_table_id is None: specs_table_id=0
 if resources_table_id is None:
     resources_table_id=0
-resources_table_id+=1
-#insert into  PROVIDED_RESOURCE table
-cursor.execute("INSERT INTO PROVIDED_RESOURCE VALUES (%d, 'VM', '%s')" % (resources_table_id, "VM"))
+
 #iterage through the flavors, get and store their specs
-for flav in cyclades_client.list_flavors()[:5]:
+for flav in cyclades_client.list_flavors()[:10]:
     flav_id = flav['id']
-    details=  cyclades_client.get_flavor_details(flav_id)
+    details = cyclades_client.get_flavor_details(flav_id)
     ram=details['ram']; cores=details['vcpus']; disk=details['disk']; name = details['name'];
     #genarate a spec description dict and json
-    spec_description={"flavor_id": flav_id, "ram": ram, "cores": cores, "disk": disk, "name": name}
-    json_spec_description=json.dumps(spec_description)
-    # execute SQL select statement
-    specs_table_id+=1
+    spec_description = {"flavor_id": flav_id, "ram": ram, "cores": cores, "disk": disk, "name": name}
+    json_spec_description = json.dumps(spec_description)
+    #insert into  PROVIDED_RESOURCE table
+    resources_table_id += 1
+    cursor.execute("INSERT INTO PROVIDED_RESOURCE VALUES (%d, 'VM', '%s')" % (resources_table_id, name))
     #insert into SPEC Description table
+    specs_table_id+=1
     cursor.execute("""INSERT INTO SPECS VALUES (%d, %d, '%s' ); """ %
                     (specs_table_id, resources_table_id, json_spec_description))
 
@@ -60,7 +60,6 @@ numrows = int(cursor.rowcount)
 # get and display one row at a time.
 for x in range(0,numrows):
     row = cursor.fetchone()
-    print row
 
 print "-------------------- SPECS ------------------------"
 

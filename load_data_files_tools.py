@@ -4,6 +4,7 @@ import urllib, urllib2, json, re, random
 
 users_file = "data_files/users.json"
 application_description_file = 'data_files/application_description.json'
+configuration_file= 'data_files/application_configuration.json'
 
 def get_REST_response(url, args):
     data = urllib.urlencode(args)
@@ -42,13 +43,59 @@ def load_application(user_id):
     args = {"application": application_string}
     response = get_REST_response(url, args)
     print"============== 'describeApplication' HTTP Responce ======================="
-    print "content: " + response
+    print response
     #recover the appId
     app_json_responce = json.loads(response)
-    app_id = app_json_responce['id']
+    app_id = app_json_responce['application']['id']
     return app_id
 
 
+def deploy_application(app_id):
+    """
+    loads the resources that will be assigned to the deployment from the application configuration file,
+    injects in their JSON representation the information about the app ID and
+    sends the 'deploy' request
+    @param app_id:
+    @return:
+    """
+    url = "http://localhost:8084/celar_server/deployment/deploy"
+    config_str = open(configuration_file, 'r').read()
+    args = {"ApplicationId": app_id, 'deployment_configuration': config_str}
+    response = get_REST_response(url, args)
+    print('========================= "deploy" HTTP responce =================')
+    print response
 
 
 
+def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
+    """
+    loads from celar_db the specs of all VMs and searches in them for the id of the one
+    that satisfies the required cores/ram/disk values
+    @param cores: the number of cores of the desired vm
+    @param ram: the RAM of the desired vm (MB)
+    @param disk: the disk size of the desired vm (GB)
+    @return: the SPEC_ID of the desired resource
+    """
+    url = "http://localhost:8084/celar_server/iaas/resources"
+    config_str = open(configuration_file, 'r').read()
+    args = {'type': 'VM'}
+    response = get_REST_response(url, args)
+    print('========================= "resources" HTTP responce =================')
+    print response
+    provided_resources = json.loads(response)['provided_resources']
+    #from the provided resources find the one of type VM and keep the specs table
+    for resource in provided_resources:
+        if resource['type'] != 'VM':
+            continue
+        specs=resource['specs']
+        for s in specs:
+            description = json.loads(s['description'])
+            try:
+                spec_cores= description['cores']
+                spec_ram= description['ram']
+                spec_disk= description['disk']
+                if spec_cores==cores and spec_ram==ram and spec_disk==disk:
+                    return resource['id']
+            except:
+                continue
+    return None
