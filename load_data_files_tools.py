@@ -24,7 +24,7 @@ def load_user():
     # print result
     print "======= 'AddUser' HTTP Responce ================="
     print response
-    return json.loads(response)['id']
+    return int(response)
 
 def load_application(user_id):
     """
@@ -33,7 +33,7 @@ def load_application(user_id):
     sends the 'addApplication' request
     @return:
     """
-    url = "http://localhost:8084/celar_server/deployment/describeApplication"
+    url = "http://localhost:8084/celar_server/deployment/describe"
     application_string = open(application_description_file, 'r').read()
     app = json.loads(application_string)
     #inject the user id of the app
@@ -42,11 +42,10 @@ def load_application(user_id):
     application_string=json.dumps(app)
     args = {"application": application_string}
     response = get_REST_response(url, args)
-    print"============== 'describeApplication' HTTP Responce ======================="
+    print"============== 'describe' HTTP Responce ======================="
     print response
     #recover the appId
-    app_json_responce = json.loads(response)
-    app_id = app_json_responce['application']['id']
+    app_id = int(response)
     return app_id
 
 
@@ -64,7 +63,21 @@ def deploy_application(app_id):
     response = get_REST_response(url, args)
     print('========================= "deploy" HTTP responce =================')
     print response
+    deployment_id=int(response)
+    return deployment_id
 
+def get_deployment_configuration(deployment_id, timestamp="now"):
+    """
+    gets the current deployement configuration for the specified deployment id
+    @param deployment_id:
+    @return:
+    """
+    url = "http://localhost:8084/celar_server/deployment/getConfiguration"
+    config_str = open(configuration_file, 'r').read()
+    args = {"DeploymentId": deployment_id, 'timestamp': timestamp}
+    response = get_REST_response(url, args)
+    print('========================= "getConfiguration" HTTP responce =================')
+    print response
 
 
 def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
