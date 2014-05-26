@@ -9,15 +9,20 @@ configuration_file= 'data_files/application_configuration.json'
 def get_REST_response(url, args):
     data = urllib.urlencode(args)
     req = urllib2.Request(url, data)
-    rsp = urllib2.urlopen(req)
-    return rsp.read()
+    try:
+        rsp = urllib2.urlopen(req)
+        return rsp.read()
+    except Exception as e:
+        print  url
+        return None
+
 
 
 def load_user():
     """
     loads the users from the users file
     """
-    url = 'http://localhost:8084/celar_server/deployment/addUser'
+    url = 'http://localhost:8080/celar_server/deployment/addUser'
     users_string = open(users_file, 'r').read()
     args = {"user": users_string}
     response = get_REST_response(url, args)
@@ -33,7 +38,7 @@ def load_application(user_id):
     sends the 'addApplication' request
     @return:
     """
-    url = "http://localhost:8084/celar_server/deployment/describe"
+    url = "http://localhost:8080/celar_server/deployment/describe"
     application_string = open(application_description_file, 'r').read()
     app = json.loads(application_string)
     #inject the user id of the app
@@ -57,7 +62,7 @@ def deploy_application(app_id):
     @param app_id:
     @return:
     """
-    url = "http://localhost:8084/celar_server/deployment/deploy"
+    url = "http://localhost:8080/celar_server/deployment/deploy"
     config_str = open(configuration_file, 'r').read()
     args = {"ApplicationId": app_id, 'deployment_configuration': config_str}
     response = get_REST_response(url, args)
@@ -72,7 +77,7 @@ def get_deployment_configuration(deployment_id, timestamp="now"):
     @param deployment_id:
     @return:
     """
-    url = "http://localhost:8084/celar_server/deployment/getConfiguration"
+    url = "http://localhost:8080/celar_server/deployment/getConfiguration"
     config_str = open(configuration_file, 'r').read()
     args = {"DeploymentId": deployment_id, 'timestamp': timestamp}
     response = get_REST_response(url, args)
@@ -89,7 +94,7 @@ def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
     @param disk: the disk size of the desired vm (GB)
     @return: the SPEC_ID of the desired resource
     """
-    url = "http://localhost:8084/celar_server/iaas/resources"
+    url = "http://localhost:8080/celar_server/iaas/resources"
     config_str = open(configuration_file, 'r').read()
     args = {'type': 'VM'}
     response = get_REST_response(url, args)
@@ -102,7 +107,7 @@ def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
             continue
         specs=resource['specs']
         for s in specs:
-            description = json.loads(s['description'])
+            description = json.loads(str(s['description']))
             try:
                 spec_cores= description['cores']
                 spec_ram= description['ram']

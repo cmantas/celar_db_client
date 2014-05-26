@@ -13,7 +13,9 @@ print "added user id: %d" % user_id
 application_id = load_application(user_id)
 print "added application id: %d" % application_id
 
+
 deployment_id = deploy_application(application_id)
+
 
 get_deployment_configuration(deployment_id)
 

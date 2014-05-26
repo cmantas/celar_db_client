@@ -6,7 +6,7 @@
             "components": [
                 {
 		        "description": "seed node",
-                "provided_resource":"VM"
+                	"provided_resource":"VM"
                 },
                 {
                     "description":"regular node",
