@@ -1,16 +1,17 @@
 {"application": {
+    "USER_name": "Celar_User_test",
     "description": "test_application",
     "modules": [
         {
             "name": "Cassandra store",
             "components": [
                 {
-		        "description": "seed node",
-                	"provided_resource":"VM"
+		            "description": "seed node",
+                    "resource_type":"VM"
                 },
                 {
                     "description":"regular node",
-                    "provided_resource":"VM"
+                    "resource_type":"VM"
                 }
             ]
         },

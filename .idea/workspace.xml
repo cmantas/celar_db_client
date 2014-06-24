@@ -2,14 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4f0f90c7-5a79-4bc9-8acf-874686761d0b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/Celar.iml" afterPath="$PROJECT_DIR$/.idea/Celar.iml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/DBTools.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_files/application_configuration.json" afterPath="$PROJECT_DIR$/data_files/application_configuration.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_files/application_description.json" afterPath="$PROJECT_DIR$/data_files/application_description.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/load_data_files_tools.py" afterPath="$PROJECT_DIR$/load_data_files_tools.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/load_provided_resources.py" afterPath="$PROJECT_DIR$/load_provided_resources.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/populate_DB.py" afterPath="$PROJECT_DIR$/populate_DB.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_files/users.json" afterPath="$PROJECT_DIR$/data_files/users.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Celar.iws" />
@@ -22,9 +22,10 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/Celar$populate_DB.coverage" NAME="populate_DB Coverage Results" MODIFIED="1401114166411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Celar$load_data_files_tools.coverage" NAME="load_data_files_tools Coverage Results" MODIFIED="1401897702267" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Celar$populate_DB.coverage" NAME="populate_DB Coverage Results" MODIFIED="1403602502401" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Celar$load_application_description__1_.coverage" NAME="load_application_description (1) Coverage Results" MODIFIED="1387374666256" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/Celar$load_resources.coverage" NAME="load_resources Coverage Results" MODIFIED="1401114161027" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/Celar$load_resources.coverage" NAME="load_resources Coverage Results" MODIFIED="1403525327893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Celar$testing.coverage" NAME="testing Coverage Results" MODIFIED="1387298867286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/Celar$test_vm_class.coverage" NAME="test_vm_class Coverage Results" MODIFIED="1387558148235" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/../cassandra@okeanos" />
     <SUITE FILE_PATH="coverage/Celar$load_users.coverage" NAME="load_users Coverage Results" MODIFIED="1387374655576" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
@@ -43,10 +44,47 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="populate_DB.py" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="load_provided_resources.py" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.2028754" vertical-offset="353" max-vertical-offset="1560">
+              <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+              <folding>
+                <element signature="e#23#38#0" expanded="true" />
+                <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+                <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+                <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+                <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+                <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+                <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+                <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="populate_DB.py" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/populate_DB.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16935484" vertical-offset="0" max-vertical-offset="620">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="load_data_files_tools.py" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/load_data_files_tools.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1845">
+              <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -77,23 +115,25 @@
         <option value="$PROJECT_DIR$/data_files/load_application_description.py" />
         <option value="$PROJECT_DIR$/load_application_description.py" />
         <option value="$PROJECT_DIR$/data_files/load_data_files_tools.py" />
-        <option value="$PROJECT_DIR$/DBTools.py" />
         <option value="$PROJECT_DIR$/../cassandra@okeanos/test_vm_class.py" />
         <option value="$PROJECT_DIR$/../cassandra@okeanos/okeanos_utils.py" />
+        <option value="$PROJECT_DIR$/makefile" />
+        <option value="$PROJECT_DIR$/DBTools.py" />
+        <option value="$PROJECT_DIR$/data_files/users.json" />
         <option value="$PROJECT_DIR$/data_files/application_description.json" />
         <option value="$PROJECT_DIR$/data_files/application_configuration.json" />
-        <option value="$PROJECT_DIR$/load_data_files_tools.py" />
-        <option value="$PROJECT_DIR$/makefile" />
-        <option value="$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py" />
         <option value="$PROJECT_DIR$/load_provided_resources.py" />
+        <option value="$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py" />
         <option value="$PROJECT_DIR$/populate_DB.py" />
+        <option value="$PROJECT_DIR$/load_data_files_tools.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1440" />
-    <option name="width" value="1872" />
-    <option name="height" value="1174" />
+    <option name="x" value="-1" />
+    <option name="y" value="720" />
+    <option name="width" value="1922" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -109,7 +149,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" splitterProportion="0.5">
+    <navigator currentView="ProjectPane" proportions="" version="1">
       <flattenPackages />
       <showMembers />
       <showModules />
@@ -149,7 +189,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="options.lastSelected" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
     <property name="recentsLimit" value="5" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/tiramola_v3" />
     <property name="FullScreen" value="false" />
     <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
@@ -243,6 +283,25 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
+    <configuration default="false" name="load_data_files_tools" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="Celar" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" enabled="false" sample_coverage="true" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/load_data_files_tools.py" />
+      <option name="PARAMETERS" value="" />
+      <RunnerSettings RunnerId="PythonRunner" />
+      <ConfigurationWrapper RunnerId="PythonRunner" />
+      <method />
+    </configuration>
     <configuration default="true" type="DjangoTestsConfigurationType" factoryName="Django tests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -327,6 +386,9 @@
       <option name="PARAMETERS" value="" />
       <method />
     </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
     <configuration default="true" type="tests" factoryName="Unittests">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -348,9 +410,6 @@
       <option name="PUREUNITTEST" value="true" />
       <option name="PARAMS" value="" />
       <option name="USE_PARAM" value="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug" singleton="true">
       <method />
     </configuration>
     <configuration default="true" type="tests" factoryName="Doctests">
@@ -414,39 +473,27 @@
       <ConfigurationWrapper RunnerId="PythonRunner" />
       <method />
     </configuration>
-    <list size="5">
+    <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Python.populate_DB" />
       <item index="1" class="java.lang.String" itemvalue="Python.load_resources" />
       <item index="2" class="java.lang.String" itemvalue="Python.load_application_description (1)" />
       <item index="3" class="java.lang.String" itemvalue="Python.DBTools" />
       <item index="4" class="java.lang.String" itemvalue="Python.test_vm_class" />
+      <item index="5" class="java.lang.String" itemvalue="Python.load_data_files_tools" />
     </list>
     <recent_temporary>
-      <list size="4">
+      <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.load_resources" />
-        <item index="1" class="java.lang.String" itemvalue="Python.test_vm_class" />
-        <item index="2" class="java.lang.String" itemvalue="Python.DBTools" />
-        <item index="3" class="java.lang.String" itemvalue="Python.load_application_description (1)" />
+        <item index="1" class="java.lang.String" itemvalue="Python.load_data_files_tools" />
+        <item index="2" class="java.lang.String" itemvalue="Python.test_vm_class" />
+        <item index="3" class="java.lang.String" itemvalue="Python.DBTools" />
+        <item index="4" class="java.lang.String" itemvalue="Python.load_application_description (1)" />
       </list>
     </recent_temporary>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
-  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
-    <option name="USER" value="" />
-    <option name="PASSWORD" value="" />
-    <option name="mySSHConnectionTimeout" value="30000" />
-    <option name="mySSHReadTimeout" value="30000" />
-    <option name="LAST_MERGED_REVISION" />
-    <option name="MERGE_DRY_RUN" value="false" />
-    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
-    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
-    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
-    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
-    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
-    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <option name="FORCE_UPDATE" value="false" />
-    <option name="IGNORE_EXTERNALS" value="false" />
-    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  <component name="SvnConfiguration" myUseAcceleration="nothing">
+    <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -470,32 +517,35 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1440" y="0" width="1872" height="1174" extended-state="7" />
-    <editor active="false" />
+    <frame x="-1" y="720" width="1922" height="1056" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32784638" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3270142" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2169399" sideWeight="0.7366255" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23162939" sideWeight="0.7366255" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39671683" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38789025" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30752915" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32968536" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
     <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
       <collection />
     </option>
   </component>
@@ -516,183 +566,457 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+    <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="405">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.0" vertical-offset="1373" max-vertical-offset="1860">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="51" selection-start="2136" selection-end="2136" vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1320">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1590">
+          <caret line="54" column="46" selection-start-line="54" selection-start-column="46" selection-end-line="54" selection-end-column="46" />
           <folding>
-            <element signature="e#23#43#0" expanded="false" />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..SPECS..." />
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <caret line="18" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="435">
+          <caret line="11" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="150">
+          <caret line="1" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="360">
+          <caret line="12" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1485">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <caret line="18" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="435">
+          <caret line="11" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="150">
+          <caret line="1" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="360">
+          <caret line="12" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1485">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="540">
+          <caret line="18" column="32" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="435">
+          <caret line="11" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="150">
+          <caret line="1" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="180" max-vertical-offset="360">
+          <caret line="12" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="405" max-vertical-offset="1485">
+          <caret line="0" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="540">
+          <caret line="25" column="52" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="330" max-vertical-offset="420">
+          <caret line="22" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="15" max-vertical-offset="150">
+          <caret line="1" column="2" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_data_files_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="1860">
+          <caret line="40" column="45" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="435">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="105" max-vertical-offset="405">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1373" max-vertical-offset="1860">
+          <caret line="102" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="90" max-vertical-offset="1320">
+          <caret line="56" column="51" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/makefile">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="133" selection-end="133" vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
+          <caret line="4" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/populate_DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="405">
+          <caret line="7" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="102" column="0" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.0" vertical-offset="1373" max-vertical-offset="1860">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1373" max-vertical-offset="1860">
+          <caret line="102" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="24" column="72" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1290">
+        <state vertical-scroll-proportion="0.0" vertical-offset="360" max-vertical-offset="1290">
+          <caret line="24" column="72" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#23#43#0" expanded="false" />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..SPECS..." />
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/populate_DB.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="15" selection-start="574" selection-end="574" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="405">
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="405">
+          <caret line="17" column="15" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/load_data_files_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="76" column="65" selection-start="2766" selection-end="2766" vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1785" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_files/users.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="727" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="854" max-vertical-offset="1785">
+          <caret line="76" column="65" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/json/decoder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="382" column="0" selection-start="13786" selection-end="13786" vertical-scroll-proportion="1.3631961" vertical-offset="5107" max-vertical-offset="5790" />
+        <state vertical-scroll-proportion="1.3631961" vertical-offset="5107" max-vertical-offset="5790">
+          <caret line="382" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/kamaki/clients/compute/rest_api.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="385" column="0" selection-start="13610" selection-end="13610" vertical-scroll-proportion="0.32274246" vertical-offset="5552" max-vertical-offset="6150" />
+        <state vertical-scroll-proportion="0.32274246" vertical-offset="5552" max-vertical-offset="6150">
+          <caret line="385" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/dist-packages/kamaki/clients/compute/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="320" column="0" selection-start="10640" selection-end="10640" vertical-scroll-proportion="0.19397993" vertical-offset="4669" max-vertical-offset="7080" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="2" selection-start="264" selection-end="264" vertical-scroll-proportion="0.39647576" vertical-offset="0" max-vertical-offset="454" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="43" selection-start="328" selection-end="328" vertical-scroll-proportion="0.34663865" vertical-offset="0" max-vertical-offset="476" />
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/dist-packages/MySQLdb/connections.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="0" selection-start="5459" selection-end="5459" vertical-scroll-proportion="3.6103723" vertical-offset="0" max-vertical-offset="5010">
-          <folding />
+        <state vertical-scroll-proportion="0.19397993" vertical-offset="4669" max-vertical-offset="7080">
+          <caret line="320" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file:///usr/lib/python2.7/json/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="241" column="22" selection-start="9433" selection-end="9441" vertical-scroll-proportion="0.2596774" vertical-offset="3439" max-vertical-offset="5340">
+        <state vertical-scroll-proportion="0.2596774" vertical-offset="3439" max-vertical-offset="5340">
+          <caret line="241" column="22" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file:///usr/lib/python2.7/bsddb/dbobj.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.816129" vertical-offset="1699" max-vertical-offset="4080">
+          <caret line="147" column="21" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.09677419" vertical-offset="0" max-vertical-offset="620">
+          <caret line="4" column="40" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_configuration.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28753993" vertical-offset="0" max-vertical-offset="626">
+          <caret line="12" column="37" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/users.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.625" vertical-offset="0" max-vertical-offset="150">
+          <caret line="1" column="28" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_files/application_description.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="435">
+          <caret line="11" column="17" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.1704313" vertical-offset="0" max-vertical-offset="1845">
+          <caret line="38" column="19" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/populate_DB.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/load_data_files_tools.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="96" column="32" selection-start="3459" selection-end="3459" vertical-scroll-proportion="0.32258064" vertical-offset="1240" max-vertical-offset="1860">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/DBTools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="16" selection-start="145" selection-end="145" vertical-scroll-proportion="0.16935484" vertical-offset="0" max-vertical-offset="620">
-          <folding>
-            <marker date="1387299076000" expanded="true" signature="-1:-1" placeholder="SELECT MAX(i..missing_value..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file:///usr/lib/python2.7/bsddb/dbobj.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="147" column="21" selection-start="5988" selection-end="5988" vertical-scroll-proportion="0.816129" vertical-offset="1699" max-vertical-offset="4080">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="40" selection-start="133" selection-end="133" vertical-scroll-proportion="0.09677419" vertical-offset="0" max-vertical-offset="620">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Dropbox/NTUA/CELAR/celar_client/load_data_files_tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="46" selection-start="3259" selection-end="3259" vertical-scroll-proportion="0.62258065" vertical-offset="979" max-vertical-offset="1860">
+        <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="1845">
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/load_provided_resources.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="55" selection-start="1859" selection-end="1859" vertical-scroll-proportion="0.27419356" vertical-offset="610" max-vertical-offset="1500">
+        <state vertical-scroll-proportion="0.2028754" vertical-offset="353" max-vertical-offset="1560">
+          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
           <folding>
-            <element signature="e#23#43#0" expanded="false" />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
-            <marker date="1401106543107" expanded="true" signature="-1:-1" placeholder="SELECT * FRO..SPECS..." />
+            <element signature="e#23#38#0" expanded="true" />
+            <marker date="1403525326120" expanded="true" signature="803:843" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="862:894" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="913:957" placeholder="DELETE FROM ..." />
+            <marker date="1403525326120" expanded="true" signature="1029:1082" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1445:1518" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1639:1693" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1765:1819" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="1886:1940" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2055:2107" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2288:2361" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2487:2541" placeholder="INSERT INTO ..." />
+            <marker date="1403525326120" expanded="true" signature="2739:2770" placeholder="SELECT * FRO..RESOURCE_TYPE..." />
+            <marker date="1403525326120" expanded="true" signature="3042:3077" placeholder="SELECT * FRO..PROVIDED_RESOURCE..." />
+            <marker date="1403525326120" expanded="true" signature="3367:3390" placeholder="SELECT * FRO..SPECS..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/populate_DB.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="0" selection-start="217" selection-end="217" vertical-scroll-proportion="0.16935484" vertical-offset="0" max-vertical-offset="620">
-          <folding />
         </state>
       </provider>
     </entry>

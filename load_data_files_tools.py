@@ -1,35 +1,43 @@
 __author__ = 'cmantas'
 
-import urllib, urllib2, json, re, random
+import urllib, urllib2, json
 
 users_file = "data_files/users.json"
 application_description_file = 'data_files/application_description.json'
 configuration_file= 'data_files/application_configuration.json'
+
 
 def get_REST_response(url, args):
     data = urllib.urlencode(args)
     req = urllib2.Request(url, data)
     try:
         rsp = urllib2.urlopen(req)
-        return rsp.read()
+        rv = rsp.read()
+        print url
+        print rv
+        result = json.loads(rv)
+        if "error_type" in result:
+            print url + " returned error: "
+            print "type: " + result["error_type"]
+            print "details: " +result['eror_details']
+            raise Exception("error from server")
+        return result
     except Exception as e:
-        print  url
+        print "exception: " + str(e)
         return None
-
 
 
 def load_user():
     """
     loads the users from the users file
     """
-    url = 'http://localhost:8080/celar_server/deployment/addUser'
+    url = 'http://localhost:8084/celar_db/deployment/addUser'
     users_string = open(users_file, 'r').read()
     args = {"user": users_string}
-    response = get_REST_response(url, args)
+    result = get_REST_response(url, args)
     # print result
-    print "======= 'AddUser' HTTP Responce ================="
-    print response
-    return int(response)
+    return int(result['id'])
+
 
 def load_application(user_id):
     """
@@ -38,7 +46,7 @@ def load_application(user_id):
     sends the 'addApplication' request
     @return:
     """
-    url = "http://localhost:8080/celar_server/deployment/describe"
+    url = "http://localhost:8084/celar_db/deployment/describe"
     application_string = open(application_description_file, 'r').read()
     app = json.loads(application_string)
     #inject the user id of the app
@@ -50,7 +58,7 @@ def load_application(user_id):
     print"============== 'describe' HTTP Responce ======================="
     print response
     #recover the appId
-    app_id = int(response)
+    app_id = response
     return app_id
 
 
@@ -62,7 +70,7 @@ def deploy_application(app_id):
     @param app_id:
     @return:
     """
-    url = "http://localhost:8080/celar_server/deployment/deploy"
+    url = "http://localhost:8084/celar_db/deployment/deploy"
     config_str = open(configuration_file, 'r').read()
     args = {"ApplicationId": app_id, 'deployment_configuration': config_str}
     response = get_REST_response(url, args)
@@ -77,7 +85,7 @@ def get_deployment_configuration(deployment_id, timestamp="now"):
     @param deployment_id:
     @return:
     """
-    url = "http://localhost:8080/celar_server/deployment/getConfiguration"
+    url = "http://localhost:8084/celar_db/deployment/getConfiguration"
     config_str = open(configuration_file, 'r').read()
     args = {"DeploymentId": deployment_id, 'timestamp': timestamp}
     response = get_REST_response(url, args)
@@ -94,7 +102,7 @@ def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
     @param disk: the disk size of the desired vm (GB)
     @return: the SPEC_ID of the desired resource
     """
-    url = "http://localhost:8080/celar_server/iaas/resources"
+    url = "http://localhost:8084/celar_db/iaas/resources"
     config_str = open(configuration_file, 'r').read()
     args = {'type': 'VM'}
     response = get_REST_response(url, args)
@@ -103,17 +111,7 @@ def get_resource_id_for_vm(cores=1, ram=1024, disk=20):
     provided_resources = json.loads(response)['provided_resources']
     #from the provided resources find the one of type VM and keep the specs table
     for resource in provided_resources:
-        if resource['type'] != 'VM':
-            continue
         specs=resource['specs']
         for s in specs:
-            description = json.loads(str(s['description']))
-            try:
-                spec_cores= description['cores']
-                spec_ram= description['ram']
-                spec_disk= description['disk']
-                if spec_cores==cores and spec_ram==ram and spec_disk==disk:
-                    return resource['id']
-            except:
-                continue
+            print s
     return None

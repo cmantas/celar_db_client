@@ -3,7 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/Celar.iml" filepath="$PROJECT_DIR$/.idea/Celar.iml" />
-      <module fileurl="file://$PROJECT_DIR$/../cassandra@okeanos/.idea/cassandra@okeanos.iml" filepath="$PROJECT_DIR$/../cassandra@okeanos/.idea/cassandra@okeanos.iml" />
     </modules>
   </component>
 </project>
